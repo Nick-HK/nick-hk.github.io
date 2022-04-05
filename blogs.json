@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "My First Github.io Blog",
+        "icon": "github-line",
+        "summary": "Idiot tech guy experience with github.io and Google Search",
+        "date": "04 Apr 2022"
+    },
+    {
+        "id": 2,
+        "title": "EMR Spark on AWS for ML",
+        "icon": "amazon-line",
+        "summary": "An assignment solution to my cloud course for EMR Spark in classifying the minst numbers",
+        "date": "09 Apr 2022"
+    },
+    {
+        "id": 3,
+        "title": "Leetcode 19",
+        "icon": "code-s-slash-fill",
+        "summary": "Solution to Leetcode 19 (Remove Nth Node From End of List)",
+        "date": "15 Apr 2022"
+    },
+    {
+        "id": 4,
+        "title": "Leetcode 1171",
+        "icon": "code-s-slash-fill",
+        "summary": "Solution to Leectcode 1171 (Remove Zero Sum Consecutive Nodes from Linked List)",
+        "date": "16 Apr 2022"
+    }
+]
