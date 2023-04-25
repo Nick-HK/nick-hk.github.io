@@ -1,0 +1,13 @@
+div {
+    font-size: 12px;
+}
+
+.about-title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-content {
+    margin-block: 20px;
+}

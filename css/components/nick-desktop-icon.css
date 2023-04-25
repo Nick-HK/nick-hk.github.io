@@ -1,0 +1,35 @@
+.dv_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 1px;
+}
+
+.dv_icon > .dv_icon_des {
+    color: white;
+    font-size: 12px;
+    margin-block: 8px;
+}
+
+.dv_icon > .dv_icon_img {
+    position:relative;
+    height: 32px;
+    width: 32px;
+}
+
+.desk-icon-click > .dv_icon_img:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(1,0,129,0.5);
+}
+
+.desk-icon-click > .dv_icon_des {
+    border-style: dotted;
+    border-color: #ffffff;
+    border-width: thin;
+    background-color: #010081;
+}

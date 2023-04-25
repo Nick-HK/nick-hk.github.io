@@ -1,3 +1,81 @@
-<h1>
-    Test Index
-</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    <div id="main" class="noselect">
+        <div id="wrap">
+            <div id="desktop_icons"></div>
+
+            
+            <!-- ACTUAL WINDOWS -->
+            <!-- Windows: can use custom elements to invoke -->
+            <div id="all_windows">
+                <nick-window></nick-window>
+                <nick-window></nick-window>
+                <nick-window></nick-window>
+                <nick-window></nick-window>
+                <nick-window></nick-window>
+                <nick-window></nick-window>
+            </div>
+            
+            <!-- Start Menu Custom Elements -->
+            <nick-start-menu windows_version="Nick's Profile Page"></nick-start-menu>
+
+            <!-- Windows Toolbar -->
+            <div class="toolbar">
+                <div class="start-button" onclick="startMenuClick(event)">
+                    Start
+                </div>
+
+                <!-- Seperator -->
+                <div class="seperator-thin">
+                    <div class="seperator-thick"></div>
+                </div>
+
+                <!-- Common Use Icons -->
+                <div style="width:100px">
+                </div>
+                
+                <!-- Seperator -->
+                <div class="seperator-thin">
+                    <div class="seperator-thick"></div>
+                </div>
+
+                <!-- Opened Programs : CUSTOM ELEMENTS-->
+                <div class="opened-programs" style="display: flex; margin-left: 4px;">
+                    <nick-opened-programs clickaction="setActiveWindows(event)"/>
+                    <!-- <div>
+                        <img style="height: 20px;" src="/img/icons/about.png"/>
+                        <div style="margin-left: 2px;">Profile</div>
+                    </div> -->
+                </div>
+
+                <!-- Seperator -->
+                
+
+                <!-- Realtime Clocklite -->
+                <div style="margin-left: auto; order: 2; display: flex;">
+                    <div class="seperator-thin" style="margin-right:2px">
+                    </div>
+                    <div id="clock">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<!-- CUSTOM ELMENT MUST BE ADD AFTER BODY -->
+<script src="/js/components/nick-desktop-icon.js"></script>
+<script src="/js/components/nick-start-menu.js"></script>
+<script src="/js/components/nick-window.js"></script>
+<script src="/js/components/nick-opened-programs.js"></script>
+<script src="/js/components/nick-window-about.js"></script>
+<script src="/js/components/nick-window-profile.js"></script>
+</html>

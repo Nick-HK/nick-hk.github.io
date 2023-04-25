@@ -1,0 +1,46 @@
+.toolbar {
+    margin-top: 5px;
+    font-size: 12px;
+    display: flex;
+}
+
+.toolbar div {
+    margin-right: 10px;
+}
+
+.toolbar div::first-letter {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 2px;
+    padding: 2px;
+    min-height: 355px;
+    background-color: white;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+    font-size: 14px;
+}
+
+.content .name {
+    color: #568139;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.section-header {
+    color: #568139;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.job-title, .education-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sub-title {
+    margin-top: 5px;
+    font-weight: 100;
+}

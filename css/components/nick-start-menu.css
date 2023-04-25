@@ -1,0 +1,61 @@
+
+
+.start-menu {
+    bottom: 13.5%;
+    height: 240px; 
+    width: 200px; 
+    position: absolute; 
+    background-color: hsl(0deg 0% 75.29%);
+    box-shadow:  -1px -1px #e0dede, 
+                -1px 0 #e0dede, 
+                0 -1px #e0dede, 
+                -2px -2px white, 
+                -2px 0 white, 
+                0 -2px white, 
+                1px 1px #818181, 
+                0 1px #818181, 
+                1px 0 #818181, 
+                1px -1px #e0dede, 
+                -1px 1px #818181, 
+                -2px 1px white, 
+                -2px 2px black, 
+                2px 2px black, 
+                2px 0 black, 
+                0 2px black, 
+                1px -2px white, 
+                2px -2px black;
+}
+
+.start-menu > .start-menu-windows-version {
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    position: absolute;
+    bottom: -24px;
+    color: white;
+    width: 229px;
+    background-color: #011590;
+    padding-inline: 6px;
+    font-weight: 900;
+}
+
+.start-menu-programs > div {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.start-menu-programs > div:hover {
+    background-color: #011590;
+    color: white;
+}
+
+.start-menu-programs img {
+    height: 24px;
+    margin-right: 6px;
+}
+
+.start-menu-programs .start-menu-item-des::first-letter{
+    text-decoration: underline;
+}

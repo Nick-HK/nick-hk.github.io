@@ -1,0 +1,68 @@
+/* ACTION PROGRAM WINDOWS SECTION */
+/* Create window-like container */
+.window {
+    background-color: #dfdfdf;
+    padding: 10px;
+    width: 600px;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    box-shadow: inset 0px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    padding: 3px;
+    top: 150px;
+    right: 700px;
+}
+
+/* Create window title bar */
+.window .window-bar {
+    background-color: rgb(0,0,128);
+    color: #ffffff;
+    padding: 2px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.window-bar > .title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.button.min {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
+    background-position: bottom 3px left 4px;
+    background-repeat: no-repeat;
+    background-color: silver;
+    border: 1px solid #808080;
+    width: 14px;
+    height: 14px;
+    margin-inline: 1px;
+}
+
+.button.max {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
+    background-position: bottom 2px left 3px;
+    background-repeat: no-repeat;
+    background-color: silver;
+    border: 1px solid #808080;
+    width: 14px;
+    height: 14px;
+    margin-inline: 1px;
+}
+
+.button.close {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
+    background-position: bottom 4px left 3px;
+    background-repeat: no-repeat;
+    background-color: silver;
+    border: 1px solid #808080;
+    width: 14px;
+    height: 14px;
+    margin-inline: 1px;
+}
+
+.button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+    text-shadow: 1px 1px #222;
+}
